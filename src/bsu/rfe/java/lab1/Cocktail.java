@@ -15,14 +15,13 @@ public class Cocktail extends Food{
     }
     public Cocktail() {
         super("Cocktail");
-            }
+    }
 
     @Override
     public boolean equals(Object cocktail) {
 
         if (super.getName().equals(((String[])cocktail)[0])){
-            if(((String[])cocktail).length == 2)
-            {
+            if(((String[])cocktail).length == 2) {
                 return this.drink.equals(((String[])cocktail)[1]);
             }
             if(((String[])cocktail).length == 3)
